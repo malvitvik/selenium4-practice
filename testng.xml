@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Tests"       
+       verbose="3"
+       configfailurepolicy="continue"
+       parallel="methods"
+       data-provider-thread-count="8"
+       thread-count="16">
+	<test name="Main">
+		<packages>
+			<package name="tests.*"/>
+		</packages>
+	</test>
+</suite>
